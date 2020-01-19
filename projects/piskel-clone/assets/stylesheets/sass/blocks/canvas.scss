@@ -1,0 +1,13 @@
+.main-canvas {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    canvas {
+        box-sizing: border-box;
+        image-rendering: pixelated;
+        width: 512px;
+        height: 512px;
+        background: url('../../data/images/background-canvas.png') repeat;
+    }
+}

@@ -1,0 +1,117 @@
+.tools {
+    width: 100px;
+    background-color: #333;
+
+    .pen-size {
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        p {
+            width: 100%;
+            margin-bottom: 5px;
+            color: #1da1f2;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: #999;   
+            cursor: pointer;
+
+            &:hover {
+                background-color: floralwhite;
+            }
+
+            &.selected {
+                border: 2px solid yellow;
+            }
+        }
+    }
+
+    ul.navbar-tools {
+        margin-top: 10px;
+        height: 153px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    ul.navbar-tools li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        height: 49px;
+        background-color: #999;
+        cursor: pointer;
+
+        position: relative;
+
+        &:hover {
+            background-color: floralwhite;
+
+            &::after {
+                content: attr(data-after);
+                position: absolute;
+                left: 50px;
+                color: #FFFFFF;
+                z-index: 9;
+                background-color: #131313;
+                font-size: 12px;
+                min-width: 125px;
+                display: inline-block;
+            }
+        }
+    }
+
+    ul.navbar-tools li.selected {
+        border: 3px solid yellow;
+    }
+
+    ul.navbar-tools li img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .colors {
+        margin: 30px 0 0 50px;
+
+        input {
+            height: 50px;
+            width: 50px;
+            border: 0;
+            background-color: #999;
+            cursor: pointer;
+
+            &.primary {
+                position: relative;
+                top: 20px;
+                right: 32px;
+            }
+
+            &:hover {
+                border: 5px solid #999;
+            }
+        }
+
+        img {
+            width: 22px;
+            height: 22px;
+            position: relative;
+            right: 29px;
+            bottom: 23px;
+            transform: rotate(180deg);   
+            background-color: red;
+            cursor: pointer;
+
+            &:hover {
+                background-color: yellow;
+            }
+        }
+    }
+}

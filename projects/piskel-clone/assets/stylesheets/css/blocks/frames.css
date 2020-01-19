@@ -1,0 +1,67 @@
+.frames {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 125px;
+  background-color: #333333;
+  padding-top: 20px;
+  overflow: auto; }
+  .frames .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 3px solid lightblue; }
+    .frames .frame canvas {
+      width: 94px;
+      height: 94px;
+      background: url("../../data/images/background-canvas.png") repeat;
+      cursor: pointer; }
+      .frames .frame canvas.invisible {
+        display: none; }
+    .frames .frame .row {
+      position: relative;
+      bottom: 96px;
+      display: flex;
+      justify-content: space-between; }
+    .frames .frame .row + .row {
+      bottom: 60px; }
+    .frames .frame button {
+      height: 30px;
+      width: 30px;
+      border: 0;
+      background-color: #999;
+      cursor: pointer; }
+    .frames .frame button img {
+      height: 20px;
+      width: 20px; }
+    .frames .frame button.number {
+      background-color: #eb436e; }
+    .frames .frame button.delete-frame, .frames .frame button.move-frame, .frames .frame button.duplicate-frame {
+      display: none;
+      opacity: .5; }
+    .frames .frame.selected {
+      border: 3px solid yellow; }
+    .frames .frame:hover {
+      border: 3px solid grey; }
+      .frames .frame:hover button.delete-frame, .frames .frame:hover button.move-frame, .frames .frame:hover button.duplicate-frame {
+        display: block; }
+    .frames .frame.hold {
+      border: 4px dashed red; }
+    .frames .frame.hovered {
+      border-color: cyan;
+      border-style: dashed; }
+  .frames .add-frame {
+    width: 100px;
+    height: 50px;
+    background-color: #333333;
+    color: #1da1f2;
+    border: 3px solid grey;
+    font-size: 14px;
+    padding: 5px 0 0 10px;
+    border-radius: 5px;
+    cursor: pointer; }
+    .frames .add-frame:hover {
+      border: 3px solid yellow; }

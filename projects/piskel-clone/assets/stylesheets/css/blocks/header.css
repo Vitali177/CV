@@ -1,0 +1,8 @@
+header {
+  height: 40px;
+  background-color: #333; }
+  header h1 {
+    margin-left: 20px; }
+    header h1 a {
+      color: rgba(156, 242, 234, 0.98);
+      text-decoration: none; }

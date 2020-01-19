@@ -1,0 +1,7 @@
+@mixin button_animation {
+    &:hover {
+        background-color: indianred;
+        transform: scale(1.2);
+        transition: transform 300ms ease-in-out;
+    }  
+}

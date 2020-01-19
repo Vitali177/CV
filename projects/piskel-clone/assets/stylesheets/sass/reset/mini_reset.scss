@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;    
+    font-style: normal;
+}
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    background-color: #999;
+}

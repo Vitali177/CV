@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/stylesheets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./assets/js/modules/utils/GIF/LZWEncoder.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/utils/GIF/NeuQuant.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/utils/GIF/GIFEncoder.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/utils/GIF/b64.js"></script>
+
+    <title>Piskel-Clone</title>
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">Piskel-Clone</a></h1>
+    </header>
+    <main>
+        <div class="tools">
+            <div class="pen-size">
+                <p>Pen size (px)</p>
+                <div class="pen-size-1">1</div>
+                <div class="pen-size-2">2</div>
+                <div class="pen-size-3">3</div>
+                <div class="pen-size-4">4</div>
+            </div>
+            <ul class ="navbar-tools">
+                <li class="pen" data-after="Pen tool (F)"><img src="assets/data/images/Vector.svg" alt=""></li>
+                <li class="stroke" data-after="Stroke tool (L)"><img src="assets/data/images/pencil.png" alt=""></li>   
+                <li class="eraser" data-after="Eraser tool (E)"><img src="assets/data/images/icons8-ластик-52.png" alt=""></li>
+                <li class="color-select" data-after="Color picker (O)"><img src="assets/data/images/icon-upload.svg" alt=""></li>
+                <li class="big-paint-bucket" data-after="Paint all pixels of the same color (A)"><img src="assets/data/images/big_bucket.svg" alt=""></li>
+                <li class="paint-bucket" data-after="Paint bucket tool (B)"><img src="assets/data/images/icon-share-first.svg" alt=""></li>
+            </ul>
+            <div class="colors">
+                <input type="color" class="primary" value="#41F795">
+                <input type="color" class="secondary" value="#41B6F7">
+                <img class="swap-colors" src="./assets/data/images/arrow2.png" alt="">
+            </div>
+        </div>
+        <div class="frames">
+            <div class="wrapper">
+                <div class="frame frame-1 selected">
+                    <canvas draggable="true"></canvas>
+                    <div class="row">
+                        <button class="number">1</button>
+                        <button class="delete-frame"><img src="./assets/data/images/1577290269.svg" alt=""></button>
+                    </div>
+                    <div class="row">
+                        <button class="move-frame"><img src="./assets/data/images/arrow.png" alt=""></button>
+                        <button class="duplicate-frame"><img src="./assets/data/images/wondicon-ui-free-file_111223.svg" alt=""></button>
+                    </div>               
+                </div>
+            </div>
+            <div class="add-frame">	&#43; Add new <br> frame</div>
+        </div>
+        <div class="main-canvas">
+            <canvas id = "canvas" width="512" height="512"></canvas>
+        </div>    
+        <div class="preview-frames">
+            <div class="preview">
+                <canvas></canvas>
+            </div>
+            <div class="info-FPS">
+                <p><span>2</span> FPS</p>
+                <input type="range" min="0" max="24" value="2" step="1">
+            </div>
+            <div class="canvas-settings">
+                <div class="canvas-size">
+                    <button class="size-128">128X128</button>
+                    <button class="size-64">64X64</button>
+                    <button class="size-32">32X32</button>
+                </div>                
+                <div class="wrapper">
+                    <button class="clear-canvas">Clear Canvas</button>
+                </div>
+                <div class="export">
+                    <button class="save-to-gif">Save to gif</button>
+                    <button class="export-to-apng">Export to .apng</button>
+                </div>           
+            </div>            
+            <div class="keyboard-shortcuts">
+                <ul>
+                    <li>Add new frame (N)</li>
+                    <li>Copy selected frame (C)</li>
+                    <li>Delete selected frame (D)</li>
+                    <li>Export as .gif (G)</li>
+                    <li>Change pen size (1, 2, 3, 4)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./dist/main.js"></script>
+</body>
+</html>

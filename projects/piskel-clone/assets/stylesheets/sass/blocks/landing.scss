@@ -1,0 +1,179 @@
+body {
+  background-color: #333;
+}
+
+.main {
+  height: 400px;
+
+  &__header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__info {    
+
+    h2 {
+      margin-top: 50px;
+      font-size: 65px;
+      color: #e4f158;
+    }
+
+    p {
+      color: rgba(156, 242, 234, 0.98);
+      font-size: 20px;
+      text-align: center;
+    }
+
+    button {
+      height: 50px;
+      width: 300px;
+      margin: 50px 0 0 50px;
+      margin-left: calc((100% - 300px - 50px) / 2);
+      background: #e4f158;
+      color: rgb(10, 9, 9);
+      font-size: 25px;
+      line-height: 15px;
+      text-align: center;
+      box-shadow: 0px 5px 15px #e4f158;
+      border: 0;
+      border-radius: 2px;
+      cursor: pointer;
+
+      transition: background 0.3s ease-in-out;
+      animation: button-translate 1s infinite;
+
+      &:hover {
+        background: rgba(156, 242, 234, 0.98);
+        box-shadow: none;
+      }
+
+      @keyframes button-translate {
+        50% {transform: translateX(50px)}        
+        100% {transform: translateX(0px)}
+      }
+    }
+  }
+  &__screenshot {
+    height: 365px;
+    width: 700px;
+    background: url('./../../data/images/landing-1.png') no-repeat;
+    background-size: contain;
+    border: 5px solid grey;
+    box-shadow: 13px 14px 7px #111;
+    transition: 0.3s transform ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+      border-color: #e4f158;
+    }
+  }
+}
+
+.header-examples {
+  height: 75px;
+  margin-left: 100px;
+  font-size: 35px;
+  color: #e4f158;
+}
+
+.example-sprites {
+  height: 300px;
+
+  &__sprites {
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+
+    .sprite {
+      height: 100%;
+      width: 300px;
+      border: 5px solid grey;
+      box-shadow: 13px 14px 7px #111;
+      transition: 0.3s transform ease-out;
+
+      &:hover {
+        transform: scale(1.2);
+        border-color: #e4f158;
+      }
+    }
+  }
+
+  &__sprite-1 {
+    background: url('./../../data/images/first.gif') no-repeat no-repeat;
+  }
+
+  &__sprite-2 {
+    background: url('./../../data/images/second.gif') no-repeat no-repeat;
+  }
+
+  &__sprite-3 {
+    background: url('./../../data/images/third.gif') no-repeat no-repeat;
+  }
+
+  &__sprite-4 {
+    background: url('./../../data/images/fourth.gif') no-repeat no-repeat;
+  }
+}
+
+.implemented-functional {
+  height: 700px;
+
+  .feature {
+    height: 250px;
+    width: 250px;
+    border: 5px solid grey;
+    box-shadow: 13px 14px 7px #111;
+    background-size: contain;
+
+    transition: 0.3s transform ease-out;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #e4f158;
+    }
+  }
+
+  &__row-1, &__row-2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__row-2 {
+    margin-top: 50px;
+  }
+ 
+  &__example-1 {
+    background: url('./../../data/images/feature-1.png') no-repeat no-repeat 50% 50%;
+  }
+
+  &__example-2 {
+    background: url('./../../data/images/feature-2.png') no-repeat no-repeat 50% 50%;
+  }
+
+  &__example-3 {
+    background: url('./../../data/images/feature-3.png') no-repeat no-repeat 50% 50%;
+  }
+
+  &__example-4 {
+    background: url('./../../data/images/feature-4.png') no-repeat no-repeat 50% 50%;
+  }
+
+  &__example-5 {
+    background: url('./../../data/images/feature-5.png') no-repeat no-repeat 50% 50%;
+  }
+
+  &__example-6 {
+    background: url('./../../data/images/feature-6.png') no-repeat no-repeat 50% 50%;
+  }
+}
+
+.author-information {
+  height: 250px;
+
+  &__main {
+    color: rgba(156, 242, 234, 0.98);
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+  }
+}
