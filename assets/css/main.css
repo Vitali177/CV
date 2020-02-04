@@ -1,5 +1,6 @@
 header, main {
   width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -186,7 +187,7 @@ p.goal {
 .wrap {
   margin: 0 auto;
   width: 800px;
-  position: relative;
+  overflow: hidden;
 }
 
 .slider {
@@ -206,9 +207,25 @@ p.goal {
   color: cornflowerblue;
 }
 
-.slider__item {
+.slider__main {
   position: relative;
+  width: 800px;
+  margin: 0 auto;
 }
+
+.slider__container {
+  display: flex;
+}
+
+.slider__item {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+
 
 .slider__item img {
   width: 800px;
@@ -219,7 +236,7 @@ p.goal {
   height: 420px;
   width: 100px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: -100px;
   cursor: pointer;
   display: flex;
@@ -234,10 +251,6 @@ p.goal {
 
 .next {
   left: 800px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, .3);
 }
 
 .slider__dots {
@@ -256,5 +269,5 @@ p.goal {
 }
 
 .dot_active {
-  background-color: #0ef370;
+  background-color: #b30a31;
 }
