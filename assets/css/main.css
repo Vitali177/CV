@@ -274,6 +274,7 @@ p.goal {
   margin-right: 10px;
   cursor: pointer;
   opacity: .2;
+  transition: opacity .3s ease-in-out;
 }
 
 .dot_active {
