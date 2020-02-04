@@ -25,6 +25,7 @@ prev.addEventListener('click', (e) => {
 
 slideContainer.addEventListener('transitionend', () => {
   if (slides[slideIndex].id === 'last-clone') {
+    slideContainer.style.transition = 'none';
     slideIndex = slides.length - 2;
     slideContainer.style.transform = `translateX(${-((size + distanceNearSlides) * slideIndex)}px)`;
   }
@@ -37,11 +38,11 @@ slideContainer.addEventListener('transitionend', () => {
 });
 
 function changeSlide(e) {
-  if (slideIndex <= 0) {
+  if (slideIndex <= 0) {  // if you click quickly many times on the arrows, fix bug
     slideIndex = 1;
   }
 
-  if (slideIndex >= slides.length - 1) {
+  if (slideIndex >= slides.length - 1) {  // if you click quickly many times on the arrows, fix bug
     slideIndex = -1;
   }
 
