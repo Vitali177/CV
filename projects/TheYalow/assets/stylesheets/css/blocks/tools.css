@@ -1,0 +1,81 @@
+.tools {
+  width: 100px;
+  background-color: #333; }
+  .tools .pen-size {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .tools .pen-size p {
+      width: 100%;
+      margin-bottom: 5px;
+      color: #1da1f2; }
+    .tools .pen-size div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      background-color: #999;
+      cursor: pointer; }
+      .tools .pen-size div:hover {
+        background-color: floralwhite; }
+      .tools .pen-size div.selected {
+        border: 2px solid yellow; }
+  .tools ul.navbar-tools {
+    margin-top: 10px;
+    height: 153px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+  .tools ul.navbar-tools li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    background-color: #999;
+    cursor: pointer;
+    position: relative; }
+    .tools ul.navbar-tools li:hover {
+      background-color: floralwhite; }
+      .tools ul.navbar-tools li:hover::after {
+        content: attr(data-after);
+        position: absolute;
+        left: 50px;
+        color: #FFFFFF;
+        z-index: 9;
+        background-color: #131313;
+        font-size: 12px;
+        min-width: 125px;
+        display: inline-block; }
+  .tools ul.navbar-tools li.selected {
+    border: 3px solid yellow; }
+  .tools ul.navbar-tools li img {
+    width: 35px;
+    height: 35px; }
+  .tools .colors {
+    margin: 30px 0 0 50px; }
+    .tools .colors input {
+      height: 50px;
+      width: 50px;
+      border: 0;
+      background-color: #999;
+      cursor: pointer; }
+      .tools .colors input.primary {
+        position: relative;
+        top: 20px;
+        right: 32px; }
+      .tools .colors input:hover {
+        border: 5px solid #999; }
+    .tools .colors img {
+      width: 22px;
+      height: 22px;
+      position: relative;
+      right: 29px;
+      bottom: 23px;
+      transform: rotate(180deg);
+      background-color: red;
+      cursor: pointer; }
+      .tools .colors img:hover {
+        background-color: yellow; }

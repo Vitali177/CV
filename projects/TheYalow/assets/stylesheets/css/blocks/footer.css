@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  height: 64px;
+  background-color: #4c4c4c;
+  box-shadow: -0.105px -2.998px 5px rgba(0, 0, 0, 0.75); }
+  .footer .logo__image img.two {
+    position: relative;
+    right: 57px; }
+  .footer__logo h1 {
+    padding-left: 30px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center; }
+  @media only screen and (max-width: 1100px) {
+    .footer {
+      height: 42px; }
+      .footer .logo__image img.one {
+        position: absolute;
+        width: 31px;
+        height: 31px; }
+      .footer .logo__image img.two {
+        position: static;
+        height: 29px;
+        width: 29px; }
+      .footer__logo {
+        margin-left: 55px; }
+      .footer__logo h1 {
+        padding-left: 10px;
+        font-size: 17px; } }

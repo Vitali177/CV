@@ -1,0 +1,97 @@
+.wrapper {
+  width: 100%;
+  height: 566px;
+  background: url("../../img/Layer20.png") no-repeat no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 1310px) {
+    .wrapper {
+      background-size: inherit; } }
+  @media only screen and (max-width: 1100px) {
+    .wrapper {
+      height: 389px; } }
+
+header {
+  width: 100%;
+  height: 112px; }
+  @media only screen and (max-width: 1100px) {
+    header {
+      height: 62px;
+      background-color: #494949; } }
+
+.content-wrapper {
+  height: 100%;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .content-wrapper__nav {
+    width: 454px;
+    height: 42px;
+    display: flex;
+    list-style-type: none;
+    background-color: #f5c506;
+    box-shadow: -4px -5px 0px 0px rgba(245, 197, 6, 0.425), -8px -8px 0px 0px rgba(245, 197, 6, 0.233); }
+  .content-wrapper__nav li {
+    width: 151px;
+    height: 100%;
+    display: flex; }
+    .content-wrapper__nav li.about-us, .content-wrapper__nav li.services {
+      border-right: 1px solid #dcb105; }
+    .content-wrapper__nav li a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-decoration: none; }
+    .content-wrapper__nav li p {
+      text-decoration: none;
+      color: #9b7d08;
+      font-family: 'Segoe WP';
+      font-size: 17px; }
+    .content-wrapper__nav li:hover {
+      background-color: #fae283; }
+      .content-wrapper__nav li:hover img, .content-wrapper__nav li:hover p {
+        filter: grayscale(1); }
+  @media only screen and (max-width: 1100px) {
+    .content-wrapper {
+      width: 640px;
+      display: flex;
+      align-items: center; }
+      .content-wrapper__nav {
+        height: 100%;
+        box-shadow: none; }
+      .content-wrapper__nav li p {
+        font-size: 19px;
+        letter-spacing: 0px; } }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo h1 {
+    position: relative;
+    right: 80px;
+    font-weight: 300;
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans Italic";
+    font-style: italic; }
+  .logo__image img.two {
+    position: relative;
+    right: 85px; }
+  @media only screen and (max-width: 1100px) {
+    .logo h1 {
+      padding-left: 10px;
+      position: static;
+      font-size: 20px; }
+    .logo__image {
+      margin-left: 10px; }
+    .logo__image img.one {
+      position: absolute;
+      width: 42px;
+      height: 42px; }
+    .logo__image img.two {
+      position: static;
+      height: 37px;
+      width: 36px; } }

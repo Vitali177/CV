@@ -1,0 +1,77 @@
+.section-devices {
+  width: 100%;
+  height: 495px;
+  background-color: #4c4c4c; }
+  .section-devices .content-wrapper {
+    display: block; }
+  .section-devices__header {
+    padding: 36px 0 0 217px; }
+    .section-devices__header h2 {
+      font-size: 43px;
+      letter-spacing: 0.5px;
+      color: #f5c506;
+      font-family: "Open Sans";
+      font-weight: 400; }
+  .section-devices__main {
+    display: flex;
+    position: relative; }
+  .section-devices__images {
+    margin: 22px 0 0 25px;
+    height: 300px;
+    display: flex; }
+    .section-devices__images img {
+      margin-right: 25px; }
+    .section-devices__images img:nth-child(3) {
+      margin-top: 115px; }
+  .section-devices__list {
+    height: 200px;
+    margin: 90px 0 0 80px; }
+  .section-devices__list ul {
+    list-style-type: none; }
+  .section-devices__list ul li {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .section-devices__list ul li::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #f5c506; }
+  .section-devices__circle {
+    height: 117px;
+    width: 117px;
+    border-radius: 50%;
+    background-color: #f5c506;
+    position: absolute;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-devices__circle p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      font-family: "Pt Sans Narrow";
+      font-weight: 700; }
+  @media only screen and (max-width: 1100px) {
+    .section-devices {
+      height: 465px; }
+      .section-devices__list {
+        display: none; }
+      .section-devices__header {
+        padding: 31px 0 0 0;
+        margin-bottom: 25px;
+        text-align: center; }
+      .section-devices__header h2 {
+        font-size: 39px;
+        letter-spacing: 0px; }
+      .section-devices__main {
+        margin-left: 30px; } }

@@ -1,0 +1,136 @@
+main {
+  height: 454px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main .column-right, main .column-left {
+    flex: 1;
+    max-width: 140px; }
+  main .column-right {
+    display: flex;
+    justify-content: flex-end; }
+  main .left-button-slider, main .right-button-slider {
+    height: 58px;
+    width: 32px;
+    margin-bottom: 20px;
+    background-color: #cca60c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .left-button-slider:hover, main .right-button-slider:hover {
+      background-color: #f5c506; }
+  main .right-button-slider {
+    transform: rotate(180deg); }
+  @media only screen and (max-width: 1100px) {
+    main {
+      height: 327px; }
+      main .left-button-slider, main .right-button-slider {
+        display: none; } }
+
+main .content-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0; }
+  main .content-wrapper__video {
+    position: relative; }
+    main .content-wrapper__video:hover::before {
+      display: none; }
+    main .content-wrapper__video:hover .primary-play, main .content-wrapper__video:hover .progress-bar-value, main .content-wrapper__video:hover .secondary-play {
+      background-color: #ec9e03; }
+    main .content-wrapper__video:hover .secondary-play img {
+      opacity: 1; }
+    main .content-wrapper__video:hover .progress-bar {
+      background-color: #FFFFFF; }
+  main .content-wrapper .primary-play {
+    position: absolute;
+    top: 129px;
+    left: 240px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #decf40;
+    cursor: pointer; }
+    main .content-wrapper .primary-play img {
+      height: 34px;
+      width: 20px;
+      margin: 18px 20px 16px 28px; }
+  main .content-wrapper .secondary-play {
+    position: absolute;
+    top: 278px;
+    left: 29px;
+    width: 27px;
+    height: 27px;
+    background-color: rgba(255, 224, 1, 0.37);
+    cursor: pointer; }
+    main .content-wrapper .secondary-play img {
+      height: 15px;
+      width: 17px;
+      margin: 5px 6px 5px 7px;
+      opacity: .37; }
+  main .content-wrapper .progress-bar {
+    position: absolute;
+    top: 285px;
+    left: 77px;
+    width: 405px;
+    height: 13px;
+    background-color: #f5c506;
+    opacity: .28;
+    border-radius: 5px;
+    cursor: pointer; }
+  main .content-wrapper .progress-bar-value {
+    position: absolute;
+    top: 285px;
+    left: 77px;
+    width: 180px;
+    height: 13px;
+    background-color: red;
+    border-radius: 5px 0 0 5px;
+    background-color: #f5c506;
+    cursor: pointer; }
+  main .content-wrapper .content-wrapper__video::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(245, 197, 6, 0.11); }
+  main .content-wrapper__video video {
+    width: 549px;
+    height: 327px;
+    object-fit: none;
+    object-position: -150px 0px;
+    display: block;
+    background-color: black;
+    cursor: pointer; }
+  main .content-wrapper h1 {
+    height: 192px;
+    width: 403px;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Asap'; }
+    main .content-wrapper h1 span {
+      color: #f5c506;
+      padding: 0px 0px 20px 40px;
+      letter-spacing: 1px; }
+  @media only screen and (max-width: 1100px) {
+    main .content-wrapper__video {
+      height: 100%;
+      width: 100%; }
+    main .content-wrapper__video video {
+      height: 100%;
+      width: 100%;
+      object-position: -100px 0; }
+    main .content-wrapper h1 {
+      display: none; }
+    main .content-wrapper .primary-play {
+      left: 294px; }
+    main .content-wrapper .secondary-play {
+      top: 278px;
+      left: 83px; }
+    main .content-wrapper .progress-bar, main .content-wrapper .progress-bar-value {
+      left: 131px; } }
