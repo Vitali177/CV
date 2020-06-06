@@ -28,8 +28,8 @@ My goal is to become professional Front-end/JavaScript developer to create intui
 * Positive
 
 ## 6. Code Examples:
-My last graduation project of the ItechArt course <https://github.com/Vitali177/Orders>
-Link on netlify to see my deployed projects <https://compassionate-sinoussi-820f74.netlify.app/>
+* My last graduation project of the ItechArt course <https://github.com/Vitali177/Orders>
+* Link on netlify to see my deployed projects <https://compassionate-sinoussi-820f74.netlify.app/>
 
 ## 7. Experience:
 Almost a year of active practicing in programming and self-education in Web Development.
