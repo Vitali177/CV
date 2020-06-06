@@ -39,7 +39,7 @@ Almost a year of active practicing in programming and self-education in Web Deve
 * __Tasks on HTML/CSS in codecademy__
 * __Course on JS in Udemy__
 * __Finished Rolling Scopes School full course (2019Q3)__
-* __Finished Full-Stack JavaScript of the ItechArt course(February 2020 - June 2020)__
+* __Finished Full-Stack JavaScript of the ItechArt course (February 2020 - June 2020)__
 
 ## 9. English Level:
 __A2-B1__
