@@ -1,10 +1,6 @@
-[Link on netlify to see my deployed projects](https://compassionate-sinoussi-820f74.netlify.app/)
-
 # CV
 
-## 1. Name:  
-__First Name:__ Vitali  
-__Last Name:__ Skrabatun
+## 1. __Hello, I am Vitali Skrabatun, 19 years old.__
 
 ## 2. Contact Info:
 * __Phone:__ +375336795015
@@ -33,15 +29,17 @@ My goal is to become professional Front-end/JavaScript developer to create intui
 
 ## 6. Code Examples:
 My last graduation project of the ItechArt course <https://github.com/Vitali177/Orders>
+Link on netlify to see my deployed projects <https://compassionate-sinoussi-820f74.netlify.app/>
 
 ## 7. Experience:
 Almost a year of active practicing in programming and self-education in Web Development.
 
 ## 8. Education:
-* __Student of BSUIR, Faculty of Computer Aided Design, engineer-electronic-programmer (2018 - now)__
+* __Second year student of BSUIR, Faculty of Computer Aided Design, engineer-electronic-programmer (2018 - now)__
 * __Tasks on HTML/CSS in codecademy__
 * __Course on JS in Udemy__
-* __Finished Rolling Scopes School full course (2019 Q3)__
+* __Finished Rolling Scopes School full course (2019Q3)__
+* __Finished Full-Stack JavaScript of the ItechArt course(February 2020 - June 2020)__
 
 ## 9. English Level:
 __A2-B1__
