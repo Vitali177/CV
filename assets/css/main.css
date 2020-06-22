@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  --primary-color: #e3e7ef;
+  --secondary-color: #FFEB3B;
+  --primary-background-color: #121212;
+}
+
+body {
+  background-color: var(--primary-background-color);
+}
+
 header, main {
   width: 90%;
   max-width: 1000px;
@@ -11,21 +25,32 @@ main {
 
 
 header {
-  height: 300px;
-  margin-top: 50px;
+  margin-top: 30px;
 
   display: flex;
   justify-content: space-evenly;
 }
 
 header .photo {
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 
   background: url('../img/photo.png') 100% 100% no-repeat;
+  background-size: cover;
   background-position-y: top;
   transition: transform .3s ease-in-out;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--primary-color);
+}
+
+.info h1 {
+  color: var(--secondary-color);
 }
 
 
@@ -36,87 +61,28 @@ header .photo {
 
 header a {
   text-decoration: none;
-  color: red;
 }
 
 p.goal {
+  margin-top: 40px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 27px;
   line-height: 40px;
-  color: #b30a31;
+  color: var(--primary-color);
 }
 
 .content.skills p {
   line-height: 38px;
 }
 
-
-
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 25px;
+.js-projects {
+  margin-top: 75px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: var(--secondary-color);
 }
-  
-.active, .collapsible:hover {
-  background-color: #555;
-}
-  
-.content {
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
-  max-height: 0;
-  height: 200px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-.content.skills {
-  height: 280px;
-}
-
-.content p {
-  margin: 0;
-  font-size: 24px;
-  line-height: 38px;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 640px) {
-  .control > .arrow {
-    display: none;
-  }
-
-  .project-name {
-    display: none;
-  }
-
-  .description {
-    border: 0;
-  }
-}
-
-
-
-
 
 @media only screen and (max-width: 480px) {
 
@@ -198,20 +164,23 @@ p.goal {
 }
 
 .slider {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .slider__title {
-  padding-bottom: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider__title p {
   margin: 0;
-  font-family: sans-serif;
+  padding: 10px 0;
   text-align: center;
   font-size: 23px;
   line-height: 30px;
-  color: cornflowerblue;
+  color: var(--primary-color);
 }
 
 .slider__main {
@@ -270,7 +239,7 @@ p.goal {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #b30a31;
+  background-color: var(--primary-color);
   margin-right: 10px;
   cursor: pointer;
   opacity: .2;
@@ -278,6 +247,6 @@ p.goal {
 }
 
 .dot_active {
-  background-color: #b30a31;
+  background-color: var(--primary-color);
   opacity: 1;
 }
