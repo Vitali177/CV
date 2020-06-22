@@ -1,15 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: sans-serif; 
+}
 
-  --primary-color: #e3e7ef;
+:root {
+  --primary-color: #FFFFFF;
   --secondary-color: #FFEB3B;
   --primary-background-color: #121212;
 }
 
 body {
   background-color: var(--primary-background-color);
+}
+
+header {
+  position: relative;
 }
 
 header, main {
@@ -20,6 +26,31 @@ header, main {
 
 main {
   height: 600px;
+}
+
+.change-theme {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);  
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.change-theme-img {
+  height: 35px;
+  width: 35px;
+  background: url("../img/change-theme--white.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
+}
+
+.change-theme-img--white {
+  background: url("../img/change-theme--black.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
 }
 
 
@@ -54,10 +85,6 @@ header .photo {
 }
 
 
-
-.photo:hover {
-  transform: scale(1.2);
-}
 
 header a {
   text-decoration: none;
@@ -220,9 +247,29 @@ p.goal {
   justify-content: center;
 }
 
-.prev img, .next img {
+.prev-button, .next-button {
   height: 75px;
   width: 75px;
+}
+
+.prev-button {
+  background: url("../img/left_arrow.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
+}
+
+.prev-button--black {
+  background: url("../img/left_arrow--black.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
+}
+
+.next-button {
+  background: url("../img/right_arrow.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
+}
+
+.next-button--black {
+  background: url("../img/right_arrow--black.png") 100% 100% no-repeat no-repeat;
+  background-size: cover;
 }
 
 .next {

@@ -46,7 +46,8 @@ function changeSlide(e) {
     slideIndex = -1;
   }
 
-  if (e.target.closest('div').classList.contains('next')) {
+  if (e.target.classList.contains('next-button') 
+      || e.target.classList.contains('next')) {
     slideIndex++;
   } else {
     slideIndex--;
