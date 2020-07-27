@@ -84,8 +84,6 @@ header .photo {
   color: var(--secondary-color);
 }
 
-
-
 header a {
   text-decoration: none;
   color: #2196F3;
@@ -112,78 +110,7 @@ p.goal {
   color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 480px) {
-
-  .control {
-    display: none;
-  }
-
-  .items-container {
-    height: 690px;
-  }
-
-  .description {
-    margin: 0;
-  }
-
-  .mobile_desc {
-    display: flex;
-    align-items: center;
-    height: 50px;
-  }
-
-  .info-help {
-    top: 480px;
-  }
-
-
-  header {
-    margin-top: 75%;
-    height: 250px;
-  }
-
-  header, main {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .photo {
-    position: absolute;
-    top: 0;
-  }
-
-  .carousel {
-    top: 1430px;
-  }
-
-  .content {
-    height: 250px;    
-  }
-
-  .items-container {
-    height: 1000px;
-  }
-
-  .project-info {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 26px;
-  }  
-}
-
-
-
-
-
 /* Slider */
-
 
 .wrap {
   margin: 0 auto;
@@ -228,12 +155,34 @@ p.goal {
   justify-content: flex-end;
 }
 
-
-
-
-.slider__item img {
+.slider__image {
   width: 800px;
   height: 420px;
+}
+
+.slider__image-orders {    
+  background: url("../img/orders.png") 50% 50% no-repeat no-repeat;
+  background-size: contain;
+}
+
+.slider__image-fancy-weather {
+  background: url("../img/fancy-weather.png") 50% 50% no-repeat no-repeat;
+  background-size: contain;
+}
+
+.slider__image-repair-design {
+  background: url("../img/repair-design.png") 50% 50% no-repeat no-repeat;
+  background-size: contain;
+}
+
+.slider__image-theyalow {
+  background: url("../img/theyalow.png") 50% 50% no-repeat no-repeat;
+  background-size: contain;
+}
+
+.slider__image-piskel {
+  background: url("../img/piskel.png") 50% 50% no-repeat no-repeat;
+  background-size: contain;
 }
 
 .prev, .next {
@@ -297,4 +246,144 @@ p.goal {
 .dot_active {
   background-color: var(--primary-color);
   opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .control {
+    display: none;
+  }
+
+  .items-container {
+    height: 690px;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .mobile_desc {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  .info-help {
+    top: 480px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  header {
+    width: 90%;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .info {
+    height: 125px;
+  }
+
+  .change-theme {
+    left: initial;
+    right: 0;
+    top: 0;
+  }
+
+  .carousel {
+    top: 1430px;
+  } 
+
+  .slider__main {
+    padding: 0 50px;
+    width: calc(100% - 100px);
+  }
+
+  .slider__title {
+    width: 100%;
+  }
+
+  .slider__item {
+    width: calc(100vw - 100px);
+    margin-right: 100px;
+  }
+
+  .wrap {
+    width: 100%;
+    padding: 0 calc((100% - 300px) / 2);
+  }
+
+  .content {
+    height: 250px;    
+  }
+
+  .items-container {
+    height: 1000px;
+  }
+
+  .project-info {
+    display: none;
+  }
+
+  .slider__image {
+    width: calc(100vw - 100px);
+    height: 500px;
+  }
+
+  .slider__image-orders {    
+    background: url("../img/orders-mobile.png") 50% 50% no-repeat no-repeat;
+    background-size: contain;
+  }
+
+  .slider__image-fancy-weather {
+    background: url("../img/fancy-weather-mobile.png") 50% 50% no-repeat no-repeat;
+    background-size: contain;
+  }
+
+  .slider__image-repair-design {
+    background: url("../img/repair-design-mobile.png") 50% 50% no-repeat no-repeat;
+    background-size: contain;
+  }
+
+  .slider__image-theyalow {
+    background: url("../img/theyalow-mobile.png") 50% 50% no-repeat no-repeat;
+    background-size: contain;
+  }
+
+  .slider__image-piskel {
+    background: url("../img/piskel-mobile.png") 50% 50% no-repeat no-repeat;
+    background-size: contain;
+  }
+
+  .prev-button, .next-button {
+    height: 50px;
+    width: 50px;
+  }
+
+  .prev, .next {
+    width: 50px;
+    height: 500px;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    left: initial;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 26px;
+  }  
 }
